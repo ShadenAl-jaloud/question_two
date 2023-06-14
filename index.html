@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> SignUp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="signup-form">
+  <h1> Sign Up Form Example</h1>
+  <hr>
+  <p> * requierd fields</p>
+  <form>
+    <label> First, Last name:*</label>
+    <input type="text" id="firstName"required>
+    <input type="text" id="lastName"required>
+    <label> Email address:*</label>
+    <input type="email" id="userEmail" required>
+    <label> Work phone:</label>
+    <input type="tel">
+    <label> Home Phone:</label>
+    <input type="tel">
+    <label> Cell Phone:</label>
+    <input type="tel">
+    <label> Fax:</label>
+    <input type="text">
+    <label> address1:*</label>
+    <input type="text"required>
+    <label> Adress2:</label>
+    <input type="text">
+    <label> City:*</label>
+    <input type="text" id="userCity"required>
+    <label> State:</label>
+    <input type="text">
+    <label> Zip Postal Code:</label>
+    <input type="text">
+    <label> Country:*</label>
+    <input type="text" id="userCountry"required>
+    <input type="button" value="Submit" id="submitB" onclick="getData()">
+
+  </form>
+
+</div>
+
+<script>
+const firstName = document.getElementById('firstName').value;
+const lastName = document.getElementById('lastName').value;
+
+function getData(){
+  alert("Congratulations "firstName+ "" +lastName " you are now signed up");
+}
+
+</script>
+</body>
+</html>
